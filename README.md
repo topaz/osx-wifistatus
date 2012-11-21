@@ -1,0 +1,1 @@
+This repo provides a Perl script which uses the Mac OS X built-in command [`airport`](https://www.google.com/search?q=osx+command-line+airport) to display wifi status information each second.  Columns are access point MAC address, access point IP, signal strength (green), signal noise (yellow), ping ms (blue).
