@@ -34,6 +34,8 @@ sub stat_hr {
   sprintf "\e[1m$n\e[30m:\e[0m".sprintf("%d\e[30;1m/\e[0m%.02f\e[30;1m/\e[0m%d", $stat{$bssid}{min}{$n}, $stat{$bssid}{sum}{$n}/$stat{$bssid}{n}{$n}, $stat{$bssid}{max}{$n});
 }
 
+printf "%28s\e[32m%12s\e[33m%6s\e[36m%8s\e[0m\n", "BSSID(router ip)", "RSSI", "Noise", "ping ms";
+
 my $lastrun;
 while (1) {
   $lastrun = time;
